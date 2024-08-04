@@ -1,0 +1,119 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Beer Story</title> 
+<link rel="stylesheet" href="styles.css">
+ 
+ 
+ 
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+  <h1>Nadya's first beer date</h1>
+</div>
+
+<!--style image right side    -->
+<img <img src="mybigbeer.jpg"  style="float: right;" width="400" height="600" />
+<div style="clear: right>
+</div>  
+
+
+
+<div class="column content">
+  <h2><span>S</span>o...Who am I?</h2>
+	   <link rel="stylesheet" href="styles.css">
+	   <p> My name is Nadya Kolosov and I am 31 years old. I live in Haifa with my husband and my 2.5 year old sweet daughter.
+	   I love to travel and have fun with my family.
+	   <br>All of this started from my hasband's and my love to beer.</p>
+	  
+
+	  
+	  
+	   <h3> <span>M</span>y first date at beer festival </h3>
+	   <p>My first date with my husband happened in <a href="https://www.sls-shalev.co.il/%D7%9E%D7%AA%D7%97%D7%9D-%D7%94%D7%AA%D7%97%D7%A0%D7%94-2014"> Tel Aviv Beer Festival 2014</a>.
+	   
+	   <br>It was so amazing and fun!! </br>
+	   <br>So...since than I fell in love with my hasband and with these special beers that we still like to drink them together. </p>
+	   
+	   <h3><span>W</span>hich beers do We like?</h3>
+	   
+	   <div  class="list-container"> 
+				   <ul  class="list1" style="list-style-type:circle;">
+				   <li><a href="https://www.duvel.com">Duvel</a></li>
+			
+			<li><a href="https://www.delirium.be/en/beers/delirium-tremens">Delirium Tremens</a></li>
+			<li><a href ="https://leffe.com/en">Leffe</a></li>
+			<li><a href ="https://tourisme-maredsous.be/gastronomy-in-maredsous/maredsous-beers/?lang=en"> Maredsous</a></li>
+			<li> <a href ="https://www.bluemoonbrewingcompany.com"> Blue Moon </a></li>
+			<li> <a href ="http://www.brewhouse-golan.co.il/he/gallery/"> Bazelet </a></li>
+			</ul>
+			
+			<ul class="list2" style="list-style-type:circle;">
+			<li> <a href ="https://hoegaarden.com/"> Hoegaarden</a></li>
+			<li> <a href ="https://www.weihenstephaner.de/"> Weihenstephan</a></li>
+			<li> <a href ="https://www.alexander-beer.co.il/"> Alexander</a></li>
+			<li> <a href ="https://www.tomerbeer.com/"> Tomer </a></li>
+		<li> <a href ="https://www.vanhonsebrouck.be/bezoek/bierkasteel/"> Kasteel</a></li>
+		<li> <a href ="https://www.murphys.com/agegate?redirect=/"> Murphys </a>
+	   </div>
+	   
+
+
+
+
+
+<!--age popup  -->
+<div id="age-verification-popup" class="hidden">
+    <h2>Legal Drinking Age</h2>
+    <p>Please enter your age:</p>
+    <input type="number" id="user-age">
+    <button id="submit-age">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+  
+  
+<script>
+const ageVerificationPopup = document.getElementById('age-verification-popup');
+const submitAgeButton = document.getElementById('submit-age');
+const userAgeInput = document.getElementById('user-age');
+const legalDrinkingAge = 18; // Replace with your country's legal drinking age
+
+// Show the popup on page load
+window.onload = function() {
+  ageVerificationPopup.classList.remove('hidden');
+};
+
+submitAgeButton.addEventListener('click', () => {
+  const userAge = parseInt(userAgeInput.value);
+
+  if (isNaN(userAge) || userAge < legalDrinkingAge) {
+    alert('You must be of legal drinking age to access this website.');
+  } else {
+    // User is of legal age, proceed to website content
+    ageVerificationPopup.classList.add('hidden');
+    // Replace this with your code to display main website content
+    console.log('User is of legal age');
+  }
+});
+
+</script>
+
+
+
+
+
+		<div class="footer">
+		<h2>Our photos .... will come soon</h2>
+		
+		</div>
+	   
+</body>
+</html>
